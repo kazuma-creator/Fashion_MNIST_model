@@ -17,7 +17,6 @@ class_names = [
 # モデルのロード
 @st.cache_resource
 def load_trained_model():
-    # 学習済みモデルをロード（事前にローカルでトレーニングして保存したもの）
     model_path = "fashion_mnist_model.h5"
     return load_model(model_path)
 
