@@ -42,7 +42,7 @@ def create_model():
 # モデルの作成と学習
 st.write("モデルを作成中...しばらくお待ちください")
 model = create_model()
-history = model.fit(x_train, y_train, epochs=5, batch_size=64, validation_split=0.2, verbose=1)  # エポック数を減らし、バッチサイズを増加して高速化
+history = model.fit(x_train, y_train, epochs=5, batch_size=64, validation_split=0.2, verbose=1)
 st.success("モデルの学習が完了しました！")
 st.session_state['model'] = model  # 学習済みモデルを保存
 
